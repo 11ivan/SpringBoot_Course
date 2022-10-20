@@ -5,24 +5,8 @@
             <column name="id" type="BIGINT">
                 <constraints nullable="false" primaryKey="true"/>
             </column>
-            <column name="fisrtName" type="VARCHAR(255)"/>
-            <column name="lastName" type="VARCHAR(255)"/>
+            <column name="first_name" type="VARCHAR(255)"/>
+            <column name="last_name" type="VARCHAR(255)"/>
         </createTable>
-    </changeSet>
-    <changeSet  author="Ivan"  id="2022101302-1">
-        <renameColumn  tableName="author"
-                       columnDataType="VARCHAR(255)"
-                       newColumnName="firstName"
-                       oldColumnName="fisrtName"/>
-    </changeSet>
-    <changeSet  author="Ivan"  id="2022101303-1">
-        <renameColumn  tableName="author"
-                       columnDataType="VARCHAR(255)"
-                       newColumnName="first_name"
-                       oldColumnName="firstName"/>
-        <renameColumn  tableName="author"
-                       columnDataType="VARCHAR(255)"
-                       newColumnName="last_name"
-                       oldColumnName="lastName"/>
     </changeSet>
 </databaseChangeLog>
